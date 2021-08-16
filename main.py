@@ -83,7 +83,7 @@ class TikTok:
     def bot(self):
         
         if self.added > 0:
-            print(f"{self.added} SUCCESS ADDED !")
+            print(f"{self.added} [+] SUCCESS, BOT HAS BEEN SEND !")
             
         action_time = round(time())
         device_id = ''.join(random.choice('0123456789') for _ in range(19))
