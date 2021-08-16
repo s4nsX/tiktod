@@ -19,7 +19,7 @@ class TikTok:
         self.lock = threading.Lock()
 
         try:
-            self.amount = int(input('> Enter the Amount of shares desired: '))
+            self.amount = int(input('> Jumlah Share (99999): '))
         except ValueError:
             self.close('Value error, expected an integer')
 
@@ -83,7 +83,7 @@ class TikTok:
     def bot(self):
         
         if self.added > 0:
-            print(f"{self.added} Shares have been added!")
+            print(f"{self.added} SUCCESS ADDED !")
             
         action_time = round(time())
         device_id = ''.join(random.choice('0123456789') for _ in range(19))
